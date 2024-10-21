@@ -28,3 +28,9 @@ app.listen(port,()=>{
 })
 
 //mongodb+srv://nazmulkarim:<db_password>@cluster0.2muiv.mongodb.net/?
+
+
+//Using this one email: nazmulkarimtanvir@gmail.com pass: 123456789mojaTa
+
+//mongodb+srv://nazmulkarimtanvir:123456789mojaTa@cluster0.sxgi6.mongodb.net/?
+//retryWrites=true&w=majority&appName=Cluster0

@@ -12,7 +12,9 @@ const Header = () => {
                     Enjoy our wide variety of dishes and delicious meals.
                     Order online and enjoy a taste of our culinary excellence. Delicious food is also available in various price ranges for various occations.
                 </p>
-                <button>View Menu</button>
+                <button onClick={() => document.getElementById('explore-menu').scrollIntoView({ behavior: 'smooth' })}>
+                    View Menu
+                </button>
             </div>
         </div>
     )

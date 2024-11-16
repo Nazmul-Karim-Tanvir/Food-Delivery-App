@@ -32,17 +32,20 @@
 
 .header-contents button {
     border: none;
-    color: #747474;
+    color: white;
     font-weight: 500;
     padding: 1vw 2.3vw;
-    background-color: white;
+    background-color: tomato;
     font-size: max(1vw, 13px);
     border-radius: 50px;
+    transition: all 0.3s ease;
 }
 
 .header-contents button:hover {
-    background-color: #f1f1f1;
+    outline: 1px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.5);
     cursor: pointer;
+    color: mi;
 }
 
 @media (max-width: 1050px) {

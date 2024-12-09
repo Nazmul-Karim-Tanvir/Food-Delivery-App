@@ -7,7 +7,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // placing user order from frontend
 const placeOrder = async (req, res) => {
 
-    const frontend_url = "https://food-delivery-app-omega-two.vercel.app"
+    const frontend_url = "http://localhost:5174"
 
     try {
         const newOrder = new orderModel({
@@ -60,7 +60,7 @@ const verifyOrder = async (req, res) => {
     const { orderId, success } = req.body;
     try {
         const isSuccess = success === "true";
-        if (isSuccess === "true") {
+        if (success === "true") {
             await orderModel.findByIdAndUpdate(orderId, { payment: true });
             res.json({ success: true, message: "Paid" })
         }
